@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <!--definindo utf-8 como padrão de dados e tornando a página escalável pra diversas telas-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--fazendo conexão com css-->
+        <link rel="stylesheet" href="style.css">
+        
+        <title>CorpFlow</title>
+    </head>
+    <body>
+        <header>
+            <h1>CorpFlow</h1>
+            <p>Adicione aqui tarefas para gerenciá-las.</p>
+    
+            <section name="tarefas">
+
+                <!--campos para criar as tarefas-->
+                <div id="add-tarefa">
+                    <p>Nome da tarefa: <input type="text" name="tarefa" id="tarefa" placeholder="Nome da tarefa"></p>
+                    <p>Descreva sua tarefa: <input type="text" name="descricao" id="descricao" placeholder="Descreva sua tarefa"></p>
+                    <p>Prazo da tarefa: <input type="date" name="prazo" id="prazo"></p>
+                    <p><button value="Adicionar" name="bttn-add" id="bttn-id" onclick="addTarefa()">Adicionar</button></p>
+                </div>
+
+                <!--mostrando as tarefas-->
+                <div id="mostrar-tarefas"> 
+                    <div class="tarefa-bloco" draggable="true">Suas tarefas atuais aparecerão aqui!</div>
+                    
+                </div>
+
+            </section>
+            <section name="fluxo-tarefas">
+                <p><h3>Coloque as tarefas em suas caixinhas:</h3></p>
+                <div id="fluxo">
+                    
+                    <br>
+                    <div class="tarefa-box" id="fazer">Fazer Tarefa</div>
+                    <div class="tarefa-box" id="verificar">Verificar</div>
+                    <div class="tarefa-box" id="aprovar">Aprovar</div>
+                
+                   
+                </div>
+            </section>
+        </header>
+
+        <footer>
+            &copy;corpflow
+        </footer>
+
+        <script src="front.js"></script>
+       
+    
+</script>
+</body>
+</html>
